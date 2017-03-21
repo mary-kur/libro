@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="es">
+	<meta charset="UTF-8">
+	<title>Pagina 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="csshake.css">
+	<style type="text/css">
+		.ciudad{
+			position: fixed;
+			left: 400px;
+			top: 400px;
+		}
+		.bosque{
+			position: fixed;
+			left: 680px;
+			top: 400px;		
+		}
+		img {
+			opacity:0;
+			transition:opacity 1s linear;*
+		}
+		img:hover {
+			opacity:1;
+		}
+	</style>
+</head>
+<body class="caminoPrincipal"> 
+<!--PAGINA 4-->
+
+ <!-- Cada camino tiene que tener un numero identificador aqui: "caminoPrincnipal", "caminoA", "caminoB", "caminoC" -->
+<video src="images/ciudad.mp4" autoplay="1" loop></video>
+<div class="content">
+	<div> <!-- Este div es de reserva, por si acaso quiero poner una imagen o algo extra --></div>
+	<div class="text">
+		&emsp;Salgo al exterior, no hay nadie, está todo como si hubiese estado años dormida, casas destruidas, coches amontonados, todo tirado por el suelo y lo peor de todo no es eso , lo peor es que me encuentro sola, en , no sé dónde  y con un claro dilema.
+		<br><br>
+		&emsp;&emsp;&emsp;Hay una carretera que parece que me lleva a la ciudad y una senda que me adentra en el bosque…
+		¿Qué camino he de coger?
+
+
+
+		</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!--caminoA_CIUDAD-->
+	<a href="pagina5_Ciudad.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;CIUDAD
+		<img style="width: 270px" class="ciudad" src="images/camino_ciudad.png">
+	</a>
+
+	<!--caminoB_BOSQUE-->
+	<a href="pagina5_Bosque.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BOSQUE
+		<img style="width: 300px" class="bosque" src="images/camino_bosque.png">
+	</a>
+</div>
+
+</body>
+</html>

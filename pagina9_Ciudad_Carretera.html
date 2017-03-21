@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="es">
+	<meta charset="UTF-8">
+	<title>Carretera</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="csshake.css">
+		<style type="text/css">
+		.ciudad{
+			position: fixed;
+			left: 420px;
+			top: 350px;
+		}
+		.bosque{
+			position: fixed;
+			left: 680px;
+			top: 350px;		
+		}
+		.ciudad {
+			opacity:0;
+			transition:opacity 1s linear;*
+		}
+		.ciudad:hover {
+			opacity:1;
+		}
+		.bosque {
+			opacity:0;
+			transition:opacity 1s linear;*
+		}
+		.bosque:hover {
+			opacity:1;
+		}
+	</style>
+</head>
+<body class="caminoA_Carretera"> 
+<!--PAGINA 9 CAMINO Carretera-->
+
+ <!-- Cada camino tiene que tener un numero identificador aqui: "caminoPrincnipal", "caminoA", "caminoB", "caminoC" -->
+<img class="fondo" src="images/carretera.jpg"></img>
+<div class="content">
+	<div> <!-- Este div es de reserva, por si acaso quiero poner una imagen o algo extra --></div>
+	<div class="text">
+
+		<p>&emsp;Encuentro una motosierra, varias cajas de puntillas, palos de madera, un martillo, un hacha y una bolsa de transporte.
+		<br>&emsp;Lo guardo todo.
+		<br>&emsp;Los zombis merodean los alrededores de la tienda, me acerco a una puerta que ha llamado mi atención, es metálica y tiene escrito con sangre…
+		<br>&emsp; …”No estáis seguros aquí”.
+
+		</p>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="pagina10_Ciudad_Carretera.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;CALLEJON
+		<img style="width: 250px" class="ciudad" src="images/callejon2.png">
+	</a>
+
+	<!--caminoB_BOSQUE-->
+	<a href="pagina10_Ciudad_Puerta.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;&emsp;&emsp;&emsp;&emsp;PUERTA
+		<img style="width: 250px" class="bosque" src="images/puerta2.png">
+	</a>
+
+</div>
+
+</body>
+</html>

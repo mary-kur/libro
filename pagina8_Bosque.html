@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="es">
+	<meta charset="UTF-8">
+	<title>Bosque</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="csshake.css">
+
+	<style type="text/css">
+		.ciudad{
+			position: fixed;
+			left: 420px;
+			top: 350px;
+		}
+		.bosque{
+			position: fixed;
+			left: 680px;
+			top: 350px;		
+		}
+		.ciudad {
+			opacity:0;
+			transition:opacity 1s linear;*
+		}
+		.ciudad:hover {
+			opacity:1;
+		}
+		.bosque {
+			opacity:0;
+			transition:opacity 1s linear;*
+		}
+		.bosque:hover {
+			opacity:1;
+		}
+	</style>
+
+</head>
+<body class="caminoB"> 
+<!--PAGINA 8 CAMINO BOSQUE-->
+
+ <!-- Cada camino tiene que tener un numero identificador aqui: "caminoPrincnipal", "caminoA", "caminoB", "caminoC" -->
+<img class="fondo" src="images/bosque_fondo.jpg" style="top: -230px"></img>
+<div class="content">
+	<div> <!-- Este div es de reserva, por si acaso quiero poner una imagen o algo extra --></div>
+	<div class="text">
+		<p>
+		Subo como puedo, tratando de no llamar la atención de los zombies. ¡Genial, es una cabaña! ¡Podría haber víveres, o incluso alguien dentro…!
+		<br>
+		Tengo que darme prisa. Estoy al límite de mis fuerzas, y hay cada vez más muertos en mis talones. ¿Entro en la cabaña o busco otro camino…?
+		</p>
+	</div>
+	
+	<!--caminoB_CABAÑA-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="pagina9_Cabana.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;ENTRAR
+		<img style="width: 250px" class="ciudad" src="images/cabaña.png">
+	</a>
+
+	<!--caminoB_BOSQUE-->
+	<a href="pagina9_Bosque.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;RODEAR
+		<img style="width: 250px" class="bosque" src="images/rodear_cabaña.png">
+	</a>
+
+</div>
+
+</body>
+</html>

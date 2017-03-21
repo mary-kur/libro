@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="es">
+	<meta charset="UTF-8">
+	<title>Pagina 4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="csshake.css">
+	<style type="text/css">
+		.ciudad{
+			position: fixed;
+			left: 420px;
+			top: 200px;
+		}
+		.bosque{
+			position: fixed;
+			left: 680px;
+			top: 170px;		
+		}
+		img {
+			opacity:0;
+			transition:opacity 1s linear;*
+		}
+		img:hover {
+			opacity:1;
+		}
+	</style>
+</head>
+<body class="caminoPrincipal" style="background-image: url('images/ciudad2.jpg'); background-size: 1530px; background-position: -130px 0px;"> 
+<!--PAGINA 4-->
+
+ <!-- Cada camino tiene que tener un numero identificador aqui: "caminoPrincnipal", "caminoA", "caminoB", "caminoC" -->
+
+<div class="content">
+	<div> <!-- Este div es de reserva, por si acaso quiero poner una imagen o algo extra --></div>
+	<div class="text">
+		<p>Corro hacia un coche que parece en buen estado.
+		Tengo que tomar una decisión rápida.
+		Me subo al coche o salgo a correr …
+		Tengo segundos para elegir…
+		</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!--caminoA_CIUDAD-->
+	<a href="pagina8_Ciudad_Carretera.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;CORRER
+		<img style="width: 270px" class="ciudad" src="images/coche_correr.png">
+	</a>
+
+	<!--caminoB_BOSQUE-->
+	<a href="pagina8_Ciudad_Coche.html" class="text" id="caminos" style="text-decoration: none; color: black;">
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;MONTAR
+		<img style="width: 300px" class="bosque" src="images/coche_montar.png">
+	</a>
+</div>
+
+</body>
+</html>

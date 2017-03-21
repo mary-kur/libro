@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="es">
+	<meta charset="UTF-8">
+	<title>Coche</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="csshake.css">
+	<style type="text/css">
+		.fondo{
+   			transition: all 2s ease;
+		}
+		.fondo-active{
+			filter: grayscale(100%);
+		}
+		.two{
+			top: 50px;
+			left: 900px;
+			transform: rotate(0deg);
+			position: fixed;
+			opacity: 0;
+			transition: all 2s ease-in-out;
+		}
+		.two-active {
+			opacity: 1;
+		}
+		.three{
+			top: 0px;
+			left: 0px;
+			transform: rotate(0deg);
+			position: fixed;
+			opacity: 0;
+			transition: all 2s ease-in-out;
+		}
+		.three-active {
+			opacity: 1;
+		}
+		.muerta {
+			transition: all 2s ease-in-out;
+			opacity: 0;
+		}
+		.muerta-active {
+			opacity: 1;
+		}
+		.boton-fin {
+			transition: all 2s ease-in-out;
+			opacity: 0;
+		}
+		.boton-fin-active {
+			opacity: 1;
+		}
+		.click {
+			transition: all 2s ease-in-out;
+			opacity: 1;
+		}
+		.click-active {
+			opacity: 0;
+		}
+
+	</style>
+</head>
+<body class="caminoA_Coche"> 
+<img class="fondo" id="fondo" src="images/ciudad2.jpg"></img>
+<!--PAGINA 8 CAMINO CIUDAD_Coche-->
+
+ <!-- Cada camino tiene que tener un numero identificador aqui: "caminoPrincnipal", "caminoA", "caminoB", "caminoC" -->
+
+<div class="content">
+	<div> <!-- Este div es de reserva, por si acaso quiero poner una imagen o algo extra --></div>
+	<div class="text">
+		<p> &emsp;Empiezo a patear las manos que intentan agarrarme con insistencia con tan mala suerte de que uno de ellos me muerde en el pie, no sé qué pasara, me volveré como ellos…
+		<br>&emsp;
+		Sin más tiempo para pensar rompen la ventanilla de mi lado, en segundos me desvanezco…
+		<br>&emsp;&emsp;
+		<input type="image" src="images/button.png" id="click" style="position: fixed; top: 300px;">
+		<br>
+		<span class="muerta">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;…muerta.</span>
+		</p>
+
+		<img class="two" src="images/blood.png">
+		<img class="three" src="images/blood1.png">
+			
+		<a href="PaginaPrincipal.html">
+
+		<div class="boton-fin">
+			<div id="cf" class="shake-slow" style="top: 20px; left: 30px;">
+			  <img class="bottom" src="images/empezar_red.png" />
+			  <img class="top" src="images/empezar.png" />
+			</div></a>
+		</div>
+
+		<script type="text/javascript">
+			$("#click").click(function() {
+				$('.fondo').toggleClass('fondo-active');
+				$('.two').toggleClass('two-active');
+				$('.three').toggleClass('three-active');
+				$('.muerta').toggleClass('muerta-active');
+				$('.boton-fin').toggleClass('boton-fin-active');
+				$('.click').toggleClass('click-active');
+			});
+		</script>
+	</div>
+</div>
+
+</body>
+</html>
